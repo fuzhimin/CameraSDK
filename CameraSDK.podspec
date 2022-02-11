@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CameraSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "Camera.SDK."
 
   spec.description  = <<-DESC
