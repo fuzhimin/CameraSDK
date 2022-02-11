@@ -8,30 +8,27 @@
 
 Pod::Spec.new do |spec|
 
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
   spec.name         = "CameraSDK"
   spec.version      = "1.0.0"
-  spec.summary      = "Camera.SDK."
-
+  spec.summary      = "付志敏测试SDK"
   spec.description  = <<-DESC
-      Integrated camera shooting and video recording function
+    Integrated camera shooting and video recording function
                    DESC
-
   spec.homepage     = "https://github.com/fuzhimin"
-    spec.author     = { "Fuzhimin" => "15184467065@163.com" }
-  
-  spec.license      = { :type => "MIT", :file => "license" }
-  spec.ios.deployment_target = "8.0"
-  spec.source       = { :git => "https://github.com/fuzhimin/CameraSDK.git", :tag => "#{spec.version}" }
-  #spec.exclude_files = "Classes/Exclude"
-#需要包含的源文件（也是个坑）按照你的文件层级来
-     spec.source_files = 'CameraSDK/CameraSDK.framework/Headers/*.{h}'
-   #你的SDK路径（因为传的是静态库，这个必须要）
-     spec.vendored_frameworks = 'CameraSDK/CameraSDK.framework'
-   #SDK头文件路径(可不要)
-     spec.public_header_files = 'CameraSDK/CameraSDK.framework/Headers/CameraSDK.h'
-   #依赖库
-     spec.frameworks = "Foundation", "UIKit"
-   #支持最小系统版本
-     spec.platform     = :ios, "9.0"
+  spec.license      = "MIT"
+  spec.author             = { "fuzhimin" => "15184467065@163.com" }
+  spec.platform     = :ios
+  spec.platform     = :ios, "8.0"
+
+  spec.source       = {  :git => "https://askeycloud.askey.com/owncloud" }
+  spec.source_files = 'CameraSDK/CameraSDK.framework/Headers/*.{h}'
+  spec.vendored_frameworks = 'CameraSDK/CameraSDK.framework'
 
 end
