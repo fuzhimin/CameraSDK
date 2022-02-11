@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
    #你的SDK路径（因为传的是静态库，这个必须要）
      spec.vendored_frameworks = 'CameraSDK/CameraSDK.framework'
    #SDK头文件路径(可不要)
-     spec.public_header_files = 'CameraSDK/CameraSDK.framework/Headers/FogV3.h'
+     spec.public_header_files = 'CameraSDK/CameraSDK.framework/Headers/CameraSDK.h'
    #依赖库
      spec.frameworks = "Foundation", "UIKit"
    #支持最小系统版本
