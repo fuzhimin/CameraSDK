@@ -25,9 +25,11 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "fuzhimin" => "15184467065@163.com" }
   spec.platform     = :ios
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "9.0"
 
-  spec.source       = {  :git => "https://askeycloud.askey.com/owncloud" }
+  spec.source       = {  :git => "https://github.com/fuzhimin/CameraSDK.git", :tag => "#{spec.version}"
+  
+}
   spec.source_files = 'CameraSDK/CameraSDK.framework/Headers/*.{h}'
   spec.vendored_frameworks = 'CameraSDK/CameraSDK.framework'
 
