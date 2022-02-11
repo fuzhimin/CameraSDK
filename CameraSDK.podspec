@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "CameraSDK"
   spec.version      = "0.0.1"
-  spec.summary      = "Camera SDK."
+  spec.summary      = "Camera.SDK."
 
   spec.description  = <<-DESC
       Integrated camera shooting and video recording function
@@ -22,8 +22,16 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "license" }
   spec.ios.deployment_target = "8.0"
   spec.source       = { :git => "https://github.com/fuzhimin/CameraSDK.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = "CameraSDK.framework"
   spec.exclude_files = "Classes/Exclude"
-
+#需要包含的源文件（也是个坑）按照你的文件层级来
+     spec.source_files = 'CameraSDK/CameraSDK.framework/Headers/*.{h}'
+   #你的SDK路径（因为传的是静态库，这个必须要）
+     spec.vendored_frameworks = 'CameraSDK/CameraSDK.framework'
+   #SDK头文件路径(可不要)
+     spec.public_header_files = 'CameraSDK/CameraSDK.framework/Headers/FogV3.h'
+   #依赖库
+     spec.frameworks = "Foundation", "UIKit"
+   #支持最小系统版本
+     spec.platform     = :ios, "9.0"
 
 end
