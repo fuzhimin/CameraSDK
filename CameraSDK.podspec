@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CameraSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "2.0.0"
   spec.summary      = "付志敏测试SDK"
   spec.description  = <<-DESC
     Integrated camera shooting and video recording function
